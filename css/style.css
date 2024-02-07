@@ -1,0 +1,291 @@
+* {
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none !important;
+    transition: .4s linear;
+}
+:root {
+    --maian-color: #6e361d;
+    --bs-orange: #fd7e14;
+}
+body {
+    scroll-behavior: smooth;
+}
+i{
+    cursor: pointer;
+}
+input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+/* Start Header */
+header.container-fluid{
+    z-index: 10000 !important;
+}
+header .links a:hover{
+    color: #fff !important;
+}
+header .icons{
+    display: flex;
+}
+header .icons i:nth-child(1),
+header .icons i:nth-child(2){
+    margin-right: 10px;
+}
+header .container{
+    border-radius: 60px !important;
+}
+header .icons .list{
+    display: none;
+}
+header .container .list i{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0 , -50%);
+}
+header .container i{
+    font-size: 23px;
+    cursor: pointer;
+}
+/* End Header */
+
+/* Start Home Section */
+section#home{
+    padding-top: 150px;
+}
+
+section#home .row{
+    overflow: hidden;
+}
+section#home .row h2{
+    color: var(--maian-color);
+    font-size: 55px;
+}
+section#home .row button{
+    padding: 10px 15px;
+    border-radius: 40px;
+    display: flex;
+    align-items: cenetr;
+}
+section#home .row button i{
+    background-color: var(--bs-orange);
+    font-size: 23px;
+    border-radius: 50%;
+}
+section#home .row img{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    width: 330px;
+    height: 330px;
+}
+/* End Home Section */
+/* Start Services Section */
+section#services ,
+section#products ,
+section#team ,
+section#review
+{
+    padding-top: 80px;
+}
+section#services  h2,
+section#products h2,
+section#team h2,
+section#review h2,
+section#book h2
+{
+    font-size: 45px;
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+section#services .container .row div{
+    background-color: var(--maian-color);
+    text-align: center;
+    transition: .2s linear;
+}
+section#services .container .row div:hover{
+    transform: translateY(-10px);
+}
+section#services .container .row div p{
+    font-size: 22px;
+    font-weight: 100;
+}
+section#services .container .row img{
+    width: 100px;
+    height: 130px;
+}
+/* End Services Section */
+/* Start Products Section */
+section#products .container{
+    background-color: rgba(128, 128, 128, 0.445);
+}
+section#products .row i{
+    color: var(--bs-orange);
+    font-size: 25px;
+}
+section#products .row img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #fd7e14;
+}
+section#products .row .info p {
+    font-weight: 200;
+    border-radius: 20px;
+    padding: 3px 10px;
+    border: 1px solid #000;
+    margin: auto;
+    width: fit-content;
+}
+section#products .row .info h2{
+    color: var(--maian-color);
+    font-size: 29px;
+}
+section#products .row .price i{
+    background-color: var(--bs-orange);
+    border-radius: 50%;
+}
+section#products .row .price i:hover{
+    background-color: rgba(128, 128, 128, 0.445);
+}
+.products-items dev{
+    max-width: 380px;
+}
+/* End Products Section */
+/* Start Team Section */
+section#team .container .person img{
+    display: block;
+    margin: 0px auto 10px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    object-fit: cover;
+}
+section#team .container .person .spachual{
+    font-weight: 100;
+    color: var(--maian-color);
+    margin-bottom: 0px;
+}
+/* End Team Section */
+/* Start Review Section */
+
+.carousel-indicators button{
+    color: var(--bs-orange) !important;
+    background-color: var(--bs-orange) !important;
+}
+.carousel-item .desc{
+    max-width: 700px;
+    margin: 0px auto 0px;
+    text-align: center;
+}
+.slide-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+.carousel-control-next,
+.carousel-control-prev
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 50%;
+    padding: 5px !important;
+}
+/* End Review Section */
+/* Start Book Section */
+section#book .container{
+    background-image: url(../images/BGContact.png);
+    background-size: cover;
+    background-position: center;
+}
+section#book h2{
+    max-width: 460px;
+}
+section#book .book-btn{
+    background-color: var(--maian-color);
+    border-radius: 20px;
+}
+section#book .info-book{
+    width: fit-content;
+    margin: auto;
+    border-radius: 30px;
+}
+/* End Book Section */
+/* Start Footer Section */
+footer#footer a{
+    color: var(--maian-color) !important;
+    font-size: 26px;
+}
+/* End Footer Section */
+/* Start Annimation_reveal Section */
+.notreveal{
+    opacity: 0 !important;
+    transform: translateY(-150px) !important;
+    transition: 1s linear !important;
+}
+.notreveal.annimation{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+/* End Annimation_reveal Section */
+/* media  */
+
+@media(max-width : 675px){
+    /* Start Header */
+    header .icons .list{
+        display: block;
+    }
+    header  {
+        position: relative;
+        z-index: 1000;
+    }
+    header .links {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: absolute;
+        min-width: 100%;
+        left: 50%;
+        transform: translate(-50% , 0%);
+        text-align: center;
+        gap: 20px;
+        padding: 20px 0px !important;
+        top: -500%;
+        transition: 1s ease-in-out;
+        z-index: -1 !important;
+    } 
+    header .links.active{
+        top: 63px;
+    }
+    header .links a{
+        display: block;
+        margin: 0px !important;
+        text-decoration: underline;
+    }
+    /* End Header */
+
+    /* Start Home Section */
+    section#home {
+        padding-top: 80px;
+    }
+    section#home .row h2,
+    section#services  h2,
+    section#products h2,
+    section#products .products-items .info h2,
+    section#team h2,
+    section#review h2,
+    section#book h2
+    {
+        font-size: 25px;
+    }
+    /* End Home Section */
+}
